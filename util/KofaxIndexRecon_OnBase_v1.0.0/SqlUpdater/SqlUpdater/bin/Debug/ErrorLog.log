@@ -1,8 +1,0 @@
-********** SqlUpdater failed! **********
-03/27/2020 15:42:03    Current thread is running under credentials: DEVNCSECU\S24715D
-03/27/2020 15:42:03    Connection string: Data Source=7912W099;Initial Catalog=OnBaseHelper;Integrated Security=True;
-
-03/27/2020 15:42:03    Exception in GetQueryResult. Query: 
-   SELECT TOP 1 keytypenum FROM OnBase.hsi.keytypetable WHERE keytype like 'SOURCE UNI%';
-Exception:  System.NullReferenceException: Object reference not set to an instance of an object.
-   at SqlUpdater.MainForm.GetQueryResult(String query, SqlConnection conn) in C:\DEVELIOPMENT_local\KofaxIndexRecon_OnBase_v1.0.0\SqlUpdater\SqlUpdater\MainForm.cs:line 175
