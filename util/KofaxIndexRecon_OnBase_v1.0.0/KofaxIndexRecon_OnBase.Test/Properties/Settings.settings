@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="KofaxIndexRecon_OnBase.Test.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="TableName_MemdocRecords" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">OnBase_MemdocRecords</Value>
+    </Setting>
+    <Setting Name="TableName_KofaxRecords" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">FormIDs_To_Process</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

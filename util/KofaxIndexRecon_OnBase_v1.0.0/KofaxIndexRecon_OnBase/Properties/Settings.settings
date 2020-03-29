@@ -1,0 +1,77 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="KofaxIndexRecon_OnBase.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="EventLogName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">KIRec_OB</Value>
+    </Setting>
+    <Setting Name="EventSourceName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">KIRec_OB</Value>
+    </Setting>
+    <Setting Name="ExchangeVersion" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Exchange2013_SP1</Value>
+    </Setting>
+    <Setting Name="EWSUri" Type="System.String" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="EmailFrom" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">svs-dkfx-process@ncsecu.dev</Value>
+    </Setting>
+    <Setting Name="EmailErrorSubject" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">KofaxIndexRecon_OnBase has failed!</Value>
+    </Setting>
+    <Setting Name="EmailTo" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">someone1@ncsecu.dev, someone2@ncsecu.dev</Value>
+    </Setting>
+    <Setting Name="KofaxConnString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=DKFX0350,3314;Initial Catalog=Kofax_FormInfo;Integrated Security=SSPI&lt;/ConnectionString&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=DKFX0350,3314;Initial Catalog=Kofax_FormInfo;Integrated Security=SSPI</Value>
+    </Setting>
+    <Setting Name="DbCmdTimeout" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">150</Value>
+    </Setting>
+    <Setting Name="SP_PopulateFormIdsToProcess" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">dbo.KfxIndxRconOB_SelectRecFromKofaxInfo</Value>
+    </Setting>
+    <Setting Name="NumDaysBeforeEmptyStatusScanned" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="TableName_MemdocRecords" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">OnBase_MemdocRecords</Value>
+    </Setting>
+    <Setting Name="TableName_KofaxRecords" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">FormIDs_To_Process</Value>
+    </Setting>
+    <Setting Name="LastSuccessfullRun" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">03-11-2020</Value>
+    </Setting>
+    <Setting Name="EmailWarningSubject" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Warning: KofaxIndexRecon_OnBase  encountered an issue</Value>
+    </Setting>
+    <Setting Name="SP_OnBaseFetching" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">KfxIndxRconOB_SelectRecFromOnBase</Value>
+    </Setting>
+    <Setting Name="OnBaseConnString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=7912W099;Initial Catalog=OnBaseHelper;Integrated Security=SSPI&lt;/ConnectionString&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=7912W099;Initial Catalog=OnBaseHelper;Integrated Security=SSPI</Value>
+    </Setting>
+    <Setting Name="SP_TruncateTables" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">KfxIndxRconOB_TruncateTables</Value>
+    </Setting>
+    <Setting Name="SP_UpdateRecNotScanned" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">KfxIndxRcon_UpdtRecNotScanned</Value>
+    </Setting>
+    <Setting Name="SP_UpdtRecScannedButMissingInCMS" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">KfxIndxRconOB_UpdtRecScannedButMissingInOnBase</Value>
+    </Setting>
+    <Setting Name="SP_UpdateFormInfoTable" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">KfxIndxRconOB_UpdateFormInfoTable</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
